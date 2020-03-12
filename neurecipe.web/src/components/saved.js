@@ -49,7 +49,7 @@ class Saved extends Component {
       return (
         <Alert severity="error">
           <AlertTitle>Oops!</AlertTitle>
-          No, Saved Recipes found...
+          No, Saved Recipes found
         </Alert>
       );
     }
