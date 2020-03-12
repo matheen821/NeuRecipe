@@ -1,0 +1,24 @@
+{
+  "name": "new_recipe",
+  "version": "1.0.0",
+  "description": "The objective of the Recipe app is to help the user manage recipes in a way that will make them easy to follow.",
+  "main": "index.js",
+  "author": "Matheen Sk",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "neurecipe.api",
+    "neurecipe.web",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.13.1"
+  },
+  "scripts": {
+    "start-api": "yarn run  --cwd=neurecipe.api dev",
+    "start-web": "yarn run --cwd=neurecipe.web dev"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

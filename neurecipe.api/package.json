@@ -1,0 +1,14 @@
+{
+  "name": "neu-recipe-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.4",
+    "nodemon": "^2.0.2"
+  }
+}
