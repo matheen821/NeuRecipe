@@ -53,7 +53,7 @@ class Recipe extends Component {
       return (
         <Alert severity="error">
           <AlertTitle>Oops!</AlertTitle>
-          No, Recipe info found...
+          No, Recipe info found
         </Alert>
       );
     }

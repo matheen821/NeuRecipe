@@ -40,7 +40,7 @@ class Recipes extends Component {
       return (
         <Alert severity="error">
           <AlertTitle>Oops!</AlertTitle>
-          No, Recipes found...
+          No, Recipes found
         </Alert>
       );
     }
