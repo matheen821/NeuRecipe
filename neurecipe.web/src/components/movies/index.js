@@ -5,7 +5,7 @@ class Movies extends Component {
   render() {
     return (
       <Iframe
-        url="http://localhost:3000/"
+        url="http://localhost:3001/"
         width="100%"
         height="470vh"
         display="initial"

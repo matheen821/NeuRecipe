@@ -9,6 +9,8 @@
   "workspaces": [
     "neurecipe.api",
     "neurecipe.web",
+    "demomovieui",
+    "demomovieapi",
     "packages/*"
   ],
   "devDependencies": {
