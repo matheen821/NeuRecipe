@@ -109,6 +109,11 @@ class Menu extends Component {
                   name: "Recipes",
                   icon: SpeakerNotesOutlinedIcon
                 },
+                {
+                  link: "/movies",
+                  name: "Movies",
+                  icon: SpeakerNotesOutlinedIcon
+                },
                 { link: "/saved", name: "Saved", icon: SaveSharpIcon },
                 {
                   link: "/favorites",

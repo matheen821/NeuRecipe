@@ -19,6 +19,7 @@
     "start-web": "yarn run --cwd=neurecipe.web dev"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react-iframe": "^1.8.0"
   }
 }
