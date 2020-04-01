@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import { createBrowserHistory } from "history";
 import { Router, Switch, Route } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Menu from "../components/layouts/menu";
 import About from "../components/about";
 import Recipes from "../components/recipes/index";
@@ -45,6 +47,7 @@ class Routes extends Component {
             <Route path="/contact" component={Contact}></Route>
             <Route path="/logout" component={Logout}></Route>
           </Switch>
+          <ToastContainer position={toast.POSITION.TOP_RIGHT} />
         </main>
       </Router>
     );
