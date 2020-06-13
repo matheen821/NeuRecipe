@@ -21,40 +21,40 @@ import ExitToAppRoundedIcon from "@material-ui/icons/ExitToAppRounded";
 import logo from "../../assets/NeuRecipe.png";
 
 const drawerWidth = 240;
-const MenuStyles = theme => ({
+const MenuStyles = (theme) => ({
   menuName: {
     fontSize: 15.5,
-    color: "#3f51b5"
+    color: "#3f51b5",
   },
   menuIcon: {
     width: 22,
     height: 22,
-    color: "#3f51b5"
+    color: "#3f51b5",
   },
   menuLink: {
-    textDecoration: "none"
+    textDecoration: "none",
   },
   drawer: {
     width: drawerWidth,
-    flexShrink: 0
+    flexShrink: 0,
   },
   drawerPaper: {
-    width: drawerWidth
+    width: drawerWidth,
   },
   toolbar: {
     height: 160,
-    width: 200
+    width: 200,
   },
   logoImage: {
     height: 150,
-    width: 180
+    width: 180,
   },
   content: {
     marginTop: 70,
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
-    padding: theme.spacing(3)
-  }
+    padding: theme.spacing(3),
+  },
 });
 class Menu extends Component {
   render() {
@@ -73,7 +73,7 @@ class Menu extends Component {
             className={classes.drawer}
             variant="permanent"
             classes={{
-              paper: classes.drawerPaper
+              paper: classes.drawerPaper,
             }}
             anchor="left"
           >
@@ -84,7 +84,7 @@ class Menu extends Component {
             <List>
               {[
                 { link: "/home", name: "Home", icon: HomeSharpIcon },
-                { link: "/about", name: "About", icon: InfoOutlinedIcon }
+                { link: "/about", name: "About", icon: InfoOutlinedIcon },
               ].map((obj, index) => (
                 <ListItem button key={obj.name}>
                   <ListItemIcon>
@@ -107,20 +107,15 @@ class Menu extends Component {
                 {
                   link: "/recipes",
                   name: "Recipes",
-                  icon: SpeakerNotesOutlinedIcon
-                },
-                {
-                  link: "/movies",
-                  name: "Movies",
-                  icon: SpeakerNotesOutlinedIcon
+                  icon: SpeakerNotesOutlinedIcon,
                 },
                 { link: "/saved", name: "Saved", icon: SaveSharpIcon },
                 {
                   link: "/favorites",
                   name: "Favorites",
-                  icon: FavoriteBorderSharpIcon
+                  icon: FavoriteBorderSharpIcon,
                 },
-                { link: "/trash", name: "Trash", icon: DeleteSharpIcon }
+                { link: "/trash", name: "Trash", icon: DeleteSharpIcon },
               ].map((obj, index) => (
                 <ListItem button key={obj.name}>
                   <ListItemIcon>
@@ -143,13 +138,13 @@ class Menu extends Component {
                 {
                   link: "/contact",
                   name: "Contact",
-                  icon: ContactMailSharpIcon
+                  icon: ContactMailSharpIcon,
                 },
                 {
                   link: "/logout",
                   name: "Logout",
-                  icon: ExitToAppRoundedIcon
-                }
+                  icon: ExitToAppRoundedIcon,
+                },
               ].map((obj, index) => (
                 <ListItem button key={obj.name}>
                   <ListItemIcon>
@@ -173,6 +168,6 @@ class Menu extends Component {
   }
 }
 Menu.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 export default withStyles(MenuStyles)(Menu);
